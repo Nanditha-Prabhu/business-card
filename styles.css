@@ -1,54 +1,48 @@
-/* body {
-    margin: 20px; */
-    /*
-    Challenge:
-    Find a web safe font you like, and add it 
-    to your card.
-    */
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    /*margin for the card*/
+    margin: 50px; 
+
+    /*text*/
+    font-family: Arial, Helvetica, sans-serif; /*if-Else if-else statement for fonts with condition of (isDownloadedInSystem)*/
+    text-align: right;
+
+    /*background of entire page*/
+    background: #f0f7f4; /* #b3bfb8;  #160f29; #ddbea8;  #b9faf8; */
+    /*Use coolors.co for color combos*/
 }
 
-.avatar {
-    width: 150px;
-} */
+.profile-img {
+    /*sets width of the image*/
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 7px 7px 3px #3c493f ;
+}
 
-/* .card {
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+.container {
+    /*This part sets width of the card, sets flex display, and justify it to centre pushing space around everything.*/
+    width: 600px;
     display: flex;
+    margin: 0 auto; /*yaxis xaxis*/
     justify-content: space-around;
-    text-align: center;
-    background: #ddebf8;
+
+    /*padding btw flex children and container*/
+    padding: 20px;
+
+    /*background of card*/
+    background: #a2e3c4; /* #f3dfc1;  #b298dc;*/
+
+    /*Since i didnt use any borders in this, only radius prop of border is used.*/
+    border-radius: 30px;
+
+    /*adds shadow to the card*/
+    box-shadow: 10px 10px 4px #3c493f ; /*1st, 2nd attribute: bottom and right thickness of shadow. 3rd attribute: blurness of the shadow.*/
+    /* for reversing from bottom-right to top-write just add 4th attribute 'inset'*/
+
+    /*sets color of the text*/
     color: #2b2839;
-    border-bottom: 6px solid #d8cefe;
-        */
-    /*
-    Challenge:
-    Find a color palette you like on Coolors.co
-    and use it in your business card.
-     */
-     /*
-} 
+}
 
- .border-blue {
-    border: 1px dotted blue;
-} */
-
-/*
-Stretch goals:
-Find other ways you can personalize 
-the design of your business card, e.g.:
-- change the border(s)
-- add border radius
-- shuffle the layout
-- shadows        🤯
-- hover effects  🤯🤯
-- animations     🤯🤯🤯
-*/
-
-/*
-Final challenge:
-Download the code to your local computer and place it
-in a folder called "business-card"
-*/ 
+.container:hover, .profile-img:hover {
+    /*this part makes the border radius zero when we hover through the card*/
+    border-radius: 0px;
+}
